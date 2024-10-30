@@ -1,0 +1,12 @@
+steps:
+- name: 'gcr.io/cloudbuild-templates/docker'
+  args: ['-t', 'us-docker.pkg.dev/tlgs-website/tlgs-website/tlgs-website', '.']
+- name: 'gcr.io/cloudbuild-templates/docker'
+  args: ['-t', 'us-docker.pkg.dev/tlgs-website/tlgs-website/tlgs-website:latest', '.']
+- name: 'gcr.io/cloudbuild-templates/docker'
+  args: ['push', 'us-docker.pkg.dev/tlgs-website/tlgs-website/tlgs-website']
+- name: 'gcr.io/cloudbuild-templates/docker'
+  args: ['push', 'us-docker.pkg.dev/tlgs-website/tlgs-website/tlgs-website:latest']
+images:
+- 'us-docker.pkg.dev/tlgs-website/tlgs-website/tlgs-website'
+- 'us-docker.pkg.dev/tlgs-website/tlgs-website/tlgs-website:latest'
