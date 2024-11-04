@@ -18,6 +18,15 @@ p {
 	font-family: "Grandstander", serif;
 }
 
+button:hover {
+	cursor: pointer;
+}
+
+button:active {
+	cursor: grab;
+	transform: translateY(4px);
+}
+
 .header {
 	flex: 0 0 10%;
 	background-color: #754C29;
