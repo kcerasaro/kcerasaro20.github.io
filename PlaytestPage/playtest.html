@@ -20,10 +20,35 @@
             </div>
         </div>
         <div class="main">
-            <p>TODO: playtest page</p>
+            <div id="messagebox">
+                <h2 class="message">Your feedback is important to us</h2>
+                <p class="message">Please download the game and fill out the form below</p>
+            </div>
+            <div id="box1">
+                <img id="cardboardbox" src="../Assets/cardboard_WideBig.png">
+                <div id="overlay1">
+                    <button class="downloadbutton" id="windows" onclick="DownloadWindows()">Windows</button>
+                    <button class="downloadbutton" id="mac" onclick="DownloadMac()">Mac</button>
+                </div>
+            </div>
+            <div id="box2">
+                <img id="cardboardbox" src="../Assets/cardboard_WideBig.png">
+                <div id="overlay2">
+                    <button class="surveybutton" onclick="DownloadSurvey()">Feedback Survey</button>
+                </div>
+            </div>
         </div>
         <div class="footer"></div>
         <script>
+            function DownloadWindows() {
+                alert("TODO: download windows");
+            }
+            function DownloadMac() {
+                alert("TODO: download mac");
+            }
+            function DownloadSurvey() {
+                alert("TODO: download survey");
+            }
         </script>
     </body>
 </html>

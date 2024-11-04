@@ -1,5 +1,11 @@
 /* grandstander, for header */
 @import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
+/* cafe francoise for message */
+@font-face {
+    font-family: "Cafe Francoise";
+    src: url("../Assets/cafe_francoise/Cafe_Francoise_D.otf") format("opentype");
+}
+
 
 html, body {
 	margin: 0;
@@ -14,8 +20,24 @@ body {
 	flex-direction: column;
 }
 
+h2 {
+	font-size: 350%;
+	color: #754C29;
+}
+
 p {
 	font-family: "Grandstander", serif;
+	font-size: 100%;
+	color: black;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+button:active {
+	cursor: grab;
+	transform: translateY(4px);
 }
 
 .header {
@@ -64,68 +86,44 @@ p {
 	flex: 0 0 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	background-image: url("../Assets/cardboard.png");
 	background-size: cover;
 	background-repeat: repeat-y;
 	padding: 5%;
+	padding-top: 0;
 	z-index: 0;
 }
 
-#gamesection {
+#messagebox {
 	position: relative;
-	width: 70vw;
+	width: 80vw;
 	z-index: 1;
+	text-align: center;
 }
 
-#gamecover {
+.message {
+	font-family: "Cafe Francoise", sans-serif;
+}
+
+#box1, #box2 {
+	position: relative;
+	width: 80vw;
+	height: 20%;
+	z-index: 1;
+	margin: 3%;
+}
+
+#cardboardbox {
 	position: relative;
 	width: 100%;
-	padding-bottom: 6%;
+	height: 100%;
 	z-index: 2;
+	margin: 0;
+	padding: 0;
 }
 
-#overlay1 {
-	position: absolute;
-	top: 0;
-	z-index: 3;
-	display: flex;
-	flex-direction: column;
-	width: 35%;
-	height: 80%;
-}
-
-#gamehook {
-	padding-left: 3%;
-	font-size: 1.5vw;
-}
-
-#learnmore {
-	padding-left: 3%;
-	font-size: 3vh;
-	color: white;
-	background-color: #603913;
-	border-radius: 8px;
-	border: hidden;
-	width: 70%;
-	height: 10%;
-	margin-left: 3%;
-}
-
-#studiosection {
-	position: relative;
-	width: 72vw;
-	z-index: 1;
-}
-
-#studiobox {
-	position: relative;
-	width: 100%;
-	z-index: 2;
-}
-
-#overlay2 {
+#overlay1, #overlay2 {
 	position: absolute;
 	top: 0;
 	z-index: 3;
@@ -136,26 +134,26 @@ p {
 	height: 100%;
 }
 
-#biglogo {
-	width: 25vw;
-	align-self: left;
+#overlay1 {
+	width: 80%;
+	left: 10%;
+	right: auto;
 }
 
-#studiotext {
-	margin-left: 5%;
-	margin-right: 5%;
-	width: 45%;
-	height: 75%;
-}
-
-#studioname {
+.downloadbutton, .surveybutton {
+	width: 30vw;
+	height: 25vh;
+	background-color: #AB7A52;
 	color: #603913;
-	font-size: 2.5vw;
-	font-weight: bold;
+	border: hidden;
+	font-family: "Cafe Francoise", serif;
+	font-size: 400%;
+	border-radius: 8px;
 }
 
-#studiohook {
-	font-size: 1.5vw;
+.downloadbutton {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .footer {
