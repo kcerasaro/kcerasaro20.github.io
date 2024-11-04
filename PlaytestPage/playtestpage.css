@@ -134,14 +134,8 @@ button:active {
 	height: 100%;
 }
 
-#overlay1 {
-	width: 80%;
-	left: 10%;
-	right: auto;
-}
-
 .downloadbutton, .surveybutton {
-	width: 30vw;
+	width: 40vw;
 	height: 25vh;
 	background-color: #AB7A52;
 	color: #603913;
@@ -149,11 +143,6 @@ button:active {
 	font-family: "Cafe Francoise", serif;
 	font-size: 400%;
 	border-radius: 8px;
-}
-
-.downloadbutton {
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .footer {
