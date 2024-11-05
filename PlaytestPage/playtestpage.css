@@ -1,6 +1,6 @@
 /* grandstander, for header */
 @import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
-/* cafe francoise for message */
+/* cafe francoise for page title / heading */
 @font-face {
     font-family: "Cafe Francoise";
     src: url("../Assets/cafe_francoise/Cafe_Francoise_D.otf") format("opentype");
@@ -86,7 +86,6 @@ button:active {
 	flex: 0 0 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	background-image: url("../Assets/cardboard.png");
 	background-size: cover;
 	background-repeat: repeat-y;
