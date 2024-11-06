@@ -6,6 +6,12 @@
     src: url("../Assets/cafe_francoise/Cafe_Francoise_D.otf") format("opentype");
 }
 
+/* cardboard cat for controls */
+@font-face {
+    font-family: "Cardboard Cat";
+    src: url("../Assets/cardboard_cat/CardboardCat-Bold.otf") format("opentype");
+}
+
 
 html, body {
 	margin: 0;
@@ -103,6 +109,17 @@ button:active {
 
 .message {
 	font-family: "Cafe Francoise", sans-serif;
+}
+
+#controlsmessagebox {
+	position: relative;
+	width: 80vw;
+	z-index: 1;
+	text-align: left;
+}
+
+.controlsmessage {
+	font-family: "Cardboard Cat", sans-serif;
 }
 
 #box1, #box2 {
