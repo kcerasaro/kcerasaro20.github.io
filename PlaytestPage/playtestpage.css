@@ -156,8 +156,9 @@ button:active {
 }
 
 table, th, td {
+	column-gap: 2px;;
 	border-color:#603913;
 	border-width: 1px;
 	justify-content: center;
-	font-family: "Cardboard Cat", sans-serif;
+	font-family: "Cafe Francoise", sans-serif;
 }
