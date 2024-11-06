@@ -112,9 +112,6 @@ button:active {
 }
 
 #controlsmessagebox {
-	position: relative;
-	width: 80vw;
-	z-index: 1;
 	text-align: left;
 }
 
