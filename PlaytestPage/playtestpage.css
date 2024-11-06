@@ -111,14 +111,6 @@ button:active {
 	font-family: "Cafe Francoise", sans-serif;
 }
 
-#controlsmessagebox {
-	text-align: left;
-}
-
-.controlsmessage {
-	font-family: "Cardboard Cat", sans-serif;
-}
-
 #box1, #box2 {
 	position: relative;
 	width: 80vw;
@@ -161,4 +153,8 @@ button:active {
 .footer {
 	flex: 0 0 5%;
 	background-image: url("../Assets/cardboardbottom.png");
+}
+
+table, th, td {
+	font-family: "Cardboard Cat", sans-serif;
 }
