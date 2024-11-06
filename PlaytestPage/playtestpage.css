@@ -156,5 +156,8 @@ button:active {
 }
 
 table, th, td {
+	border-color:#603913;
+	border-width: 1px;
+	justify-content: center;
 	font-family: "Cardboard Cat", sans-serif;
 }
