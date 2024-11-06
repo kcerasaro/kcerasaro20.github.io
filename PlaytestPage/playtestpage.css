@@ -156,9 +156,9 @@ button:active {
 }
 
 table, th, td {
-	column-gap: 2px;;
+	display:table;
 	border-color:#603913;
-	border-width: 1px;
+	border-width: 1px solid;
 	justify-content: center;
 	font-family: "Cafe Francoise", sans-serif;
 }
