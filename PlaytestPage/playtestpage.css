@@ -158,6 +158,10 @@ button:active {
 table, th, td {
 	border-color:#603913;
 	border: 1px solid;
-	justify-content: center;
 	font-family: "Cafe Francoise", sans-serif;
+}
+
+.controlstable div {
+	justify-content: center;
+	align-items: center;
 }
