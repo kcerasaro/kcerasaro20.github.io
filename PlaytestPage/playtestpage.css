@@ -160,7 +160,8 @@ table, th, td {
 	border-color:#603913;
 	border-collapse: collapse;
 	font-family: "Cafe Francoise", sans-serif;
+	width: 50%;
+	scale: 150%;
 	justify-content: center;
 	align-items: center;
-	width: 50%;
 }
