@@ -30,10 +30,53 @@
                     <p><b>Totally Legit Game Studio</b> is a student-run game studio at Drexel University. <b>Recipe for Ruin</b> is a twenty-week project, where we have come together to create this fun and exciting game.</p>
                 </div>
             </div>
+            <div id="teamsection"></div>
         </div>
         <div class="footer"></div>
         <script>
-            let button = document.getElementById("button");
+
+            let teamsection = document.getElementById("teamsection");
+            for (let i = 0; i < 18; i++) {
+                addTeamCards(teamsection);
+            }
+
+            function addTeamCards(div) {
+                console.log(teamsection);
+                let teamcard = document.createElement("div");
+                teamcard.setAttribute("class", "teamcard");
+
+                let card = document.createElement("img");
+                card.setAttribute("class", "card");
+                card.setAttribute("src", "../Assets/cardboard_Small.png");
+                teamcard.append(card);
+
+                let cardoverlay = document.createElement("div");
+                cardoverlay.setAttribute("class", "cardoverlay");
+
+                let avatar = document.createElement("img");
+                avatar.setAttribute("class", "avatar");
+                avatar.setAttribute("src", "../Assets/avatarplaceholder.png");
+                cardoverlay.append(avatar);
+
+                let name = document.createElement("h2");
+                name.setAttribute("class", "name");
+                name.textContent = "Name";
+                cardoverlay.append(name);
+
+                let title = document.createElement("h3");
+                title.setAttribute("class", "title");
+                title.textContent = "Title"
+                cardoverlay.append(title);
+
+                let blurb = document.createElement("p");
+                blurb.setAttribute("class", "blurb");
+                blurb.textContent = "1-2 sentence blurb";
+                cardoverlay.append(blurb);
+
+                teamcard.append(cardoverlay);
+                teamsection.append(teamcard);
+                console.log(teamsection);
+            }
         </script>
     </body>
 </html>
