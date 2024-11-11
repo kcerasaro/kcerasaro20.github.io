@@ -158,6 +158,7 @@ button:active {
 table, th, td {
 	border-color:#603913;
 	border: 1px solid;
+	border-collapse: collapse;
 	font-family: "Cafe Francoise", sans-serif;
 }
 
