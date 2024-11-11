@@ -98,6 +98,7 @@ button:active {
 	padding: 5%;
 	padding-top: 0;
 	z-index: 0;
+	align-items: center;
 }
 
 #messagebox {
@@ -150,18 +151,31 @@ button:active {
 	border-radius: 8px;
 }
 
-.footer {
-	flex: 0 0 5%;
-	background-image: url("../Assets/cardboardbottom.png");
+#controls {
+	justify-content: center;
+	align-items: center;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	width: 60vw;
+	text-align: center;
+	margin-top: 10%;
 }
 
 table, th, td {
-	border: 2px solid;
-	border-color:#603913;
+	border: 3px solid #603913;
 	border-collapse: collapse;
 	font-family: "Cafe Francoise", sans-serif;
-	width: 50%;
-	scale: 150%;
-	justify-content: center;
-	align-items: center;
+}
+
+th, td {
+	padding: 1%;
+}
+
+
+.footer {
+	flex: 0 0 5%;
+	background-image: url("../Assets/cardboardbottom.png");
 }
