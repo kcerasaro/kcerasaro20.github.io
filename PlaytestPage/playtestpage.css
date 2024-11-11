@@ -160,9 +160,6 @@ table, th, td {
 	border: 1px solid;
 	border-collapse: collapse;
 	font-family: "Cafe Francoise", sans-serif;
-}
-
-.controlstable div {
 	justify-content: center;
 	align-items: center;
 }
