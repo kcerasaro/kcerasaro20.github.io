@@ -156,12 +156,11 @@ button:active {
 }
 
 table, th, td {
+	border: 2px solid;
 	border-color:#603913;
-	border: 1px solid;
 	border-collapse: collapse;
 	font-family: "Cafe Francoise", sans-serif;
 	justify-content: center;
 	align-items: center;
-	margin-left: 25%;
-	margin-right:25%
+	width: 50%;
 }
