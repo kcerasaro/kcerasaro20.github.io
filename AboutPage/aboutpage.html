@@ -36,11 +36,39 @@
         <script>
 
             let teamsection = document.getElementById("teamsection");
-            for (let i = 0; i < 18; i++) {
-                addTeamCards(teamsection);
-            }
 
-            function addTeamCards(div) {
+            let blurbPlaceholder = "1-2 sentence blurb";
+            let imgPlaceholder = "../Assets/cardboard_Small.png";
+
+            // leads
+            addTeamCards(teamsection, "Akoreyu", "Creative Director", blurbPlaceholder, imgPlaceholder); 
+            addTeamCards(teamsection, "Brendan", "Technical Director", blurbPlaceholder, imgPlaceholder);
+            addTeamCards(teamsection, "Livy", "Art Director", blurbPlaceholder, imgPlaceholder);
+            addTeamCards(teamsection, "Celeste", "Producer", blurbPlaceholder, imgPlaceholder);
+            addTeamCards(teamsection, "Ryan", "Perforce Admin", blurbPlaceholder, imgPlaceholder);
+
+            // production
+            addTeamCards(teamsection, "Kaitlyn", "Branding & Marketing", blurbPlaceholder, imgPlaceholder);
+            addTeamCards(teamsection, "Kimberlyn", "Web Development", blurbPlaceholder, imgPlaceholder);
+
+            // art
+            addTeamCards(teamsection, "Mosadi", "Technical Artist", blurbPlaceholder, imgPlaceholder);
+
+            // design
+            addTeamCards(teamsection, "Tavin", "Narrative Designer", blurbPlaceholder, imgPlaceholder);
+            addTeamCards(teamsection, "Jenny", "Game & Systems Design", blurbPlaceholder, imgPlaceholder);
+            addTeamCards(teamsection, "Audrey", "UI Art & Design", blurbPlaceholder, imgPlaceholder);
+
+            // programming
+            addTeamCards(teamsection, "Luke", "Enemy AI Lead & Enemy Design", blurbPlaceholder, imgPlaceholder);
+            addTeamCards(teamsection, "Joshua", "PCG Lead & Level Design", blurbPlaceholder, imgPlaceholder);
+            addTeamCards(teamsection, "Minhal", "Mechanics Lead Programmer");
+            addTeamCards(teamsection, "Nam", "Enemy AI", blurbPlaceholder, imgPlaceholder);
+            addTeamCards(teamsection, "Dante", "Game Mechanics", blurbPlaceholder, imgPlaceholder);
+            addTeamCards(teamsection, "Devone", "Game Mechanics", blurbPlaceholder, imgPlaceholder);
+            addTeamCards(teamsection, "Andy", "Programmer & Bug Tracker", blurbPlaceholder, imgPlaceholder);
+
+            function addTeamCards(div, memberName, memberTitle, memberBlurb, memberImg) {
                 console.log(teamsection);
                 let teamcard = document.createElement("div");
                 teamcard.setAttribute("class", "teamcard");
@@ -55,22 +83,22 @@
 
                 let avatar = document.createElement("img");
                 avatar.setAttribute("class", "avatar");
-                avatar.setAttribute("src", "../Assets/avatarplaceholder.png");
+                avatar.setAttribute("src", memberImg);
                 cardoverlay.append(avatar);
 
                 let name = document.createElement("h2");
                 name.setAttribute("class", "name");
-                name.textContent = "Name";
+                name.textContent = memberName;
                 cardoverlay.append(name);
 
                 let title = document.createElement("h3");
                 title.setAttribute("class", "title");
-                title.textContent = "Title"
+                title.textContent = memberTitle;
                 cardoverlay.append(title);
 
                 let blurb = document.createElement("p");
                 blurb.setAttribute("class", "blurb");
-                blurb.textContent = "1-2 sentence blurb";
+                blurb.textContent = memberBlurb;
                 cardoverlay.append(blurb);
 
                 teamcard.append(cardoverlay);
