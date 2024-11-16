@@ -41,11 +41,11 @@
             let imgPlaceholder = "../Assets/cardboard_Small.png";
 
             // leads
-            addTeamCards(teamsection, "Akoreyu", "Creative Director", blurbPlaceholder, imgPlaceholder); 
-            addTeamCards(teamsection, "Brendan", "Technical Director", blurbPlaceholder, imgPlaceholder);
-            addTeamCards(teamsection, "Livy", "Art Director", blurbPlaceholder, imgPlaceholder);
-            addTeamCards(teamsection, "Celeste", "Producer", blurbPlaceholder, imgPlaceholder);
-            addTeamCards(teamsection, "Ryan", "Perforce Admin", blurbPlaceholder, imgPlaceholder);
+            const leadNames = ["Akoreyu", "Brendan", "Livy", "Celeste", "Ryan"];
+            const leadTitles = ["Creative Director", "Technical Director", "Art Director", "Producer", "Perforce Admin"];
+            for (let i = 0; i < leadNames.length; i++) {
+                addTeamCards(teamsection, leadNames[i], leadTitles[i], blurbPlaceholder, imgPlaceholder);
+            }
 
             // production
             addTeamCards(teamsection, "Kaitlyn", "Web Development", blurbPlaceholder, imgPlaceholder);
@@ -55,18 +55,20 @@
             addTeamCards(teamsection, "Mosadi", "Technical Artist", blurbPlaceholder, imgPlaceholder);
 
             // design
-            addTeamCards(teamsection, "Tavin", "Narrative Designer", blurbPlaceholder, imgPlaceholder);
-            addTeamCards(teamsection, "Jenny", "Game & Systems Design", blurbPlaceholder, imgPlaceholder);
-            addTeamCards(teamsection, "Audrey", "UI Art & Design", blurbPlaceholder, imgPlaceholder);
+            const designNames = ["Tavin", "Jenny", "Audrey"];
+            const designTitles = ["Narrative Designer", "Game & Systems Design", "UI Art & Design"];
+            for (let i = 0; i < designNames.length; i++) {
+                addTeamCards(teamsection, designNames[i], designTitles[i], blurbPlaceholder, imgPlaceholder);
+            }
+            
 
             // programming
-            addTeamCards(teamsection, "Luke", "Enemy AI Lead & Enemy Design", blurbPlaceholder, imgPlaceholder);
-            addTeamCards(teamsection, "Joshua", "PCG Lead & Level Design", blurbPlaceholder, imgPlaceholder);
-            addTeamCards(teamsection, "Minhal", "Mechanics Lead Programmer", blurbPlaceholder, imgPlaceholder);
-            addTeamCards(teamsection, "Nam", "Enemy AI", blurbPlaceholder, imgPlaceholder);
-            addTeamCards(teamsection, "Dante", "Game Mechanics", blurbPlaceholder, imgPlaceholder);
-            addTeamCards(teamsection, "Devone", "Game Mechanics", blurbPlaceholder, imgPlaceholder);
-            addTeamCards(teamsection, "Andy", "Programmer & Bug Tracker", blurbPlaceholder, imgPlaceholder);
+            const programmingNames = ["Luke", "Joshua", "Minhal", "Nam", "Dante", "Devone", "Andy"];
+            const programmingTitles = ["Enemy AI Lead & Enemy Design", "PCG Lead & Level Design", "Mechanics Lead Programmer", "Enemy AI", "Game Mechanics", "Game Mechanics", "Programmer & Bug Tracker"];
+            for (let i = 0; i < programmingNames.length; i++) {
+                addTeamCards(teamsection, programmingNames[i], programmingTitles[i], blurbPlaceholder, imgPlaceholder);
+            }
+
 
             function addTeamCards(div, memberName, memberTitle, memberBlurb, memberImg) {
                 console.log(teamsection);
