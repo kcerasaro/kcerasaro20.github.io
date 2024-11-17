@@ -38,27 +38,26 @@
             let teamsection = document.getElementById("teamsection");
 
             let blurbPlaceholder = "1-2 sentence blurb";
-            let imgPlaceholder = "../Assets/cardboard_Small.png";
 
             // leads
             const leadNames = ["Akoreyu", "Brendan", "Livy", "Celeste", "Ryan"];
             const leadTitles = ["Creative Director", "Technical Director", "Art Director", "Producer", "Perforce Admin"];
             for (let i = 0; i < leadNames.length; i++) {
-                addTeamCards(teamsection, leadNames[i], leadTitles[i], blurbPlaceholder, imgPlaceholder);
+                addTeamCards(teamsection, leadNames[i], leadTitles[i], blurbPlaceholder);
             }
 
             // production
-            addTeamCards(teamsection, "Kaitlyn", "Web Development", blurbPlaceholder, imgPlaceholder);
-            addTeamCards(teamsection, "Kimberlyn", "Web Development", blurbPlaceholder, imgPlaceholder);
+            addTeamCards(teamsection, "Kaitlyn", "Web Development", blurbPlaceholder);
+            addTeamCards(teamsection, "Kimberlyn", "Web Development", blurbPlaceholder);
 
             // art
-            addTeamCards(teamsection, "Mosadi", "Technical Artist", blurbPlaceholder, imgPlaceholder);
+            addTeamCards(teamsection, "Mosadi", "Technical Artist", blurbPlaceholder);
 
             // design
             const designNames = ["Tavin", "Jenny", "Audrey"];
             const designTitles = ["Narrative Designer", "Game & Systems Design", "UI Art & Design"];
             for (let i = 0; i < designNames.length; i++) {
-                addTeamCards(teamsection, designNames[i], designTitles[i], blurbPlaceholder, imgPlaceholder);
+                addTeamCards(teamsection, designNames[i], designTitles[i], blurbPlaceholder);
             }
             
 
@@ -66,11 +65,11 @@
             const programmingNames = ["Luke", "Joshua", "Minhal", "Nam", "Dante", "Devone", "Andy"];
             const programmingTitles = ["Enemy AI Lead & Enemy Design", "PCG Lead & Level Design", "Mechanics Lead Programmer", "Enemy AI", "Game Mechanics", "Game Mechanics", "Programmer & Bug Tracker"];
             for (let i = 0; i < programmingNames.length; i++) {
-                addTeamCards(teamsection, programmingNames[i], programmingTitles[i], blurbPlaceholder, imgPlaceholder);
+                addTeamCards(teamsection, programmingNames[i], programmingTitles[i], blurbPlaceholder);
             }
 
 
-            function addTeamCards(div, memberName, memberTitle, memberBlurb, memberImg) {
+            function addTeamCards(div, memberName, memberTitle, memberBlurb) {
                 console.log(teamsection);
                 let teamcard = document.createElement("div");
                 teamcard.setAttribute("class", "teamcard");
@@ -85,6 +84,7 @@
 
                 let avatar = document.createElement("img");
                 avatar.setAttribute("class", "avatar");
+                let memberImg = "../Assets/Avatars/" + memberName + "Avatar.png";
                 avatar.setAttribute("src", memberImg);
                 cardoverlay.append(avatar);
 
