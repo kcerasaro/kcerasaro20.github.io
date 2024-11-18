@@ -9,7 +9,7 @@
 | Kimberlyn |     |       |
 | Mosadi    |     |  x    |
 | Tavin     |  x  |  x    |
-| Jenny     |  x  |       |
+| Jenny     |  x  |  x    |
 | Audrey    |  x  |  x    |
 | Luke      |     |  x    |
 | Joshua    |     |       |
