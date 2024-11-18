@@ -42,8 +42,13 @@
             // leads
             const leadNames = ["Akoreyu", "Brendan", "Livy", "Celeste", "Ryan"];
             const leadTitles = ["Creative Director", "Technical Director", "Art Director", "Producer", "Perforce Admin"];
+            const leadBlurbs = ["https://youtu.be/PHMqIZh7XfY?si=tgPmABvAA4k892lw&t=60",
+                                blurbPlaceholder,
+                                blurbPlaceholder,
+                                "I wrestle with Jira so YOU don't have to!",
+                                "I program games"];
             for (let i = 0; i < leadNames.length; i++) {
-                addTeamCards(teamsection, leadNames[i], leadTitles[i], blurbPlaceholder);
+                addTeamCards(teamsection, leadNames[i], leadTitles[i], leadBlurbs[i]);
             }
 
             // production
