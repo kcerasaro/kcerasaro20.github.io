@@ -174,17 +174,17 @@ button:active {
 .name {
 	font-family: "Cardboard Cat", serif;
 	margin: 0;
-	font-size: 2vw;
+	font-size: 1.5vw;
 }
 
 .title {
 	font-family: "Cardboard Cat", serif;
 	margin: 0;
-	font-size: 1.5vw;
+	font-size: 1vw;
 }
 
 .blurb {
-	font-size: 1vw;
+	font-size: 0.7vw;
 }
 
 .footer {

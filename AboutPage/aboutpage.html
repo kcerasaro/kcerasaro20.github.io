@@ -39,26 +39,32 @@
 
             let blurbPlaceholder = "1-2 sentence blurb";
 
-            // leads
+            // ----- leads -----
+
             const leadNames = ["Akoreyu", "Brendan", "Livy", "Celeste", "Ryan"];
             const leadTitles = ["Creative Director", "Technical Director", "Art Director", "Producer", "Perforce Admin"];
-            const leadBlurbs = ["https://youtu.be/PHMqIZh7XfY?si=tgPmABvAA4k892lw&t=60",
-                                blurbPlaceholder,
-                                blurbPlaceholder,
-                                "I wrestle with Jira so YOU don't have to!",
-                                "I program games"];
+            const leadBlurbs = [
+                "https://youtu.be/PHMqIZh7XfY?si=tgPmABvAA4k892lw&t=60",
+                blurbPlaceholder,
+                blurbPlaceholder,
+                "I wrestle with Jira so YOU don't have to!",
+                "I program games"];
+
             for (let i = 0; i < leadNames.length; i++) {
                 addTeamCards(teamsection, leadNames[i], leadTitles[i], leadBlurbs[i]);
             }
 
-            // production
+            // ----- production -----
+
             addTeamCards(teamsection, "Kaitlyn", "Web Development", blurbPlaceholder);
             addTeamCards(teamsection, "Kimberlyn", "Web Development", blurbPlaceholder);
 
-            // art
+            // ----- art -----
+
             addTeamCards(teamsection, "Mosadi", "Technical Artist", "Really good at making stuff look cool.");
 
-            // design
+            // ----- design -----
+
             const designNames = ["Tavin", "Jenny", "Audrey"];
             const designTitles = ["Narrative Designer", "Game & Systems Design", "UI Art & Design"];
             const designBlurbs = ["I hope to create interesting and engaging narratives for people to enjoy.",
@@ -68,8 +74,8 @@
                 addTeamCards(teamsection, designNames[i], designTitles[i], designBlurbs[i]);
             }
             
-
             // programming
+            
             const programmingNames = ["Luke", "Joshua", "Minhal", "Nam", "Dante", "Devone", "Andy"];
             const programmingTitles = ["Enemy AI Lead & Enemy Design", "PCG Lead & Level Design", "Mechanics Lead Programmer", "Enemy AI", "Game Mechanics", "Game Mechanics", "Programmer & Bug Tracker"];
             const programmingBlurbs = ["Computer Science Major, focusing on Artificial Intelligence and Machine Learning",
