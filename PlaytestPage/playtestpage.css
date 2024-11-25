@@ -1,8 +1,7 @@
 /* grandstander, for header */
 @import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
-/*  Cardboard Cat for page title / heading */
 
-/* cardboard cat for controls */
+/* cardboard cat*/
 @font-face {
     font-family: "Cardboard Cat";
     src: url("../Assets/cardboard_cat/CardboardCat-Bold.otf") format("opentype");
@@ -105,7 +104,7 @@ button:active {
 }
 
 .message {
-	font-family: " Cardboard Cat", sans-serif;
+	font-family: "Cardboard Cat", sans-serif;
 }
 
 #box1, #box2 {
@@ -142,7 +141,7 @@ button:active {
 	background-color: #AB7A52;
 	color: #603913;
 	border: hidden;
-	font-family: " Cardboard Cat", serif;
+	font-family: "Cardboard Cat", serif;
 	font-size: 400%;
 	border-radius: 8px;
 }
@@ -163,7 +162,7 @@ table {
 table, th, td {
 	border: 3px solid #603913;
 	border-collapse: collapse;
-	font-family: " Cardboard Cat", sans-serif;
+	font-family: "Cardboard Cat", sans-serif;
 }
 
 th, td {

@@ -1,7 +1,7 @@
 /* grandstander, for header */
 @import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* cardboard cat for versions */
+/* cardboard cat*/
 @font-face {
     font-family: "Cardboard Cat";
     src: url("../Assets/cardboard_cat/CardboardCat-Bold.otf") format("opentype");
