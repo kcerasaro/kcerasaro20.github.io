@@ -1,7 +1,7 @@
 | Name      | Img | Blurb |
 |-----------|-----|-------|
 | Akoreyu   |  x  |  x    |
-| Brendan   |     |       |
+| Brendan   |  x  |       |
 | Livy      |     |       |
 | Celeste   |  x  |  x    |
 | Ryan      |  x  |  x    |
