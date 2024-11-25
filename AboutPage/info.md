@@ -16,5 +16,5 @@
 | Minhal    |  x  |  x    |
 | Nam       |     |       |
 | Dante     |  x  |       |
-| Devone    |  x  |       |
+| Devone    |  x  |  x    |
 | Andy      |  x  |  x    |
