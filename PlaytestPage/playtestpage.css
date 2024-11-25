@@ -175,8 +175,8 @@ th, td {
 }
 
 #recipeBook {
-	width: 90%;
-	align-items: center;
+	width: 95%;
+	justify-content: center;
 }
 
 .footer {
