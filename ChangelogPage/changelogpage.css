@@ -1,10 +1,6 @@
 /* grandstander, for header */
 @import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
-/* cafe francoise for page title */
-@font-face {
-    font-family: "Cafe Francoise";
-    src: url("../Assets/cafe_francoise/Cafe_Francoise_D.otf") format("opentype");
-}
+
 /* cardboard cat for versions */
 @font-face {
     font-family: "Cardboard Cat";
@@ -25,7 +21,7 @@ body {
 }
 
 h1 {
-	font-family: "Cafe Francoise", sans-serif;
+	font-family: "Cardboard Cat", sans-serif;
 	font-size: 350%;
 	color: #754C29;
 }
@@ -124,7 +120,7 @@ button:active {
 
 a {
 	margin-top: 10%;
-	font-family: "Cafe Francoise", sans-serif;
+	font-family: "Cardboard Cat", sans-serif;
 	font-size: 150%;
 	color: #754C29;
 	text-decoration: none;
