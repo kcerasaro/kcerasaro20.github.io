@@ -4,10 +4,10 @@
 | Brendan   |     |       |
 | Livy      |     |       |
 | Celeste   |  x  |  x    |
-| Ryan      |     |  x    |
+| Ryan      |  x  |  x    |
 | Kaitlyn   |  x  |       |
 | Kimberlyn |     |       |
-| Mosadi    |     |  x    |
+| Mosadi    |  x  |  x    |
 | Tavin     |  x  |  x    |
 | Jenny     |  x  |  x    |
 | Audrey    |  x  |  x    |
