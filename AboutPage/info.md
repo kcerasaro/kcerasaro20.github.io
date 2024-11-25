@@ -11,10 +11,10 @@
 | Tavin     |  x  |  x    |
 | Jenny     |  x  |  x    |
 | Audrey    |  x  |  x    |
-| Luke      |     |  x    |
-| Joshua    |     |       |
+| Luke      |  x  |  x    |
+| Joshua    |  x  |       |
 | Minhal    |  x  |  x    |
-| Nam       |     |  x    |
+| Nam       |  x  |  x    |
 | Dante     |  x  |  x    |
 | Devone    |  x  |  x    |
 | Andy      |  x  |  x    |
