@@ -12,7 +12,7 @@
 | Jenny     |  x  |  x    |
 | Audrey    |  x  |  x    |
 | Luke      |  x  |  x    |
-| Joshua    |  x  |       |
+| Joshua    |  x  |  x    |
 | Minhal    |  x  |  x    |
 | Nam       |  x  |  x    |
 | Dante     |  x  |  x    |
