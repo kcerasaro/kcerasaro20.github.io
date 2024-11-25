@@ -174,11 +174,6 @@ th, td {
 	padding: 1%;
 }
 
-#recipeBook {
-	padding-left: 100px;
-	padding-right: 100px;
-}
-
 .footer {
 	flex: 0 0 5%;
 	background-image: url("../Assets/cardboardbottom.png");
