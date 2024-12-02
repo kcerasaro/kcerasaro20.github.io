@@ -144,6 +144,7 @@ button:active {
 	font-family: "Cardboard Cat", serif;
 	font-size: 400%;
 	border-radius: 8px;
+	scale: 75%;
 }
 
 #controls {
