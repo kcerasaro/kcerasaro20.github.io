@@ -175,6 +175,28 @@ th, td {
 	justify-content: center;
 }
 
+#titlebox {
+	position: relative;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+}
+
+.textcontainer {
+	position: relative;
+	width: 100%;
+	z-index: 1;
+	text-align: left;
+}
+
+a {
+	margin-top: 10%;
+	font-family: "Cardboard Cat", sans-serif;
+	font-size: 150%;
+	color: #754C29;
+	text-decoration: none;
+}
+
 .footer {
 	flex: 0 0 5%;
 	background-image: url("../Assets/cardboardbottom.png");
