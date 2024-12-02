@@ -2,10 +2,10 @@
 |-----------|-----|-------|
 | Akoreyu   |  x  |  x    |
 | Brendan   |  x  |  x    |
-| Livy      |     |       |
+| Livy      |  x  |  x    |
 | Celeste   |  x  |  x    |
 | Ryan      |  x  |  x    |
-| Kaitlyn   |  x  |       |
+| Kaitlyn   |  x  |  x    |
 | Kimberlyn |  x  |  x    |
 | Mosadi    |  x  |  x    |
 | Tavin     |  x  |  x    |
