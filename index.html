@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width">
         <title>Totally Legit Game Studio</title>
-        <link rel="icon" type="image/x-icon" href="./Assets/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
     </head>
     <link rel="stylesheet" type="text/css" href="index.css">
     <body>
@@ -14,30 +14,51 @@
             </div>
             <div id="headerbuttonsdiv">
                 <button class="headerbuttons" onclick="window.location.href=''">Home</button>
-                <button class="headerbuttons" onclick="window.location.href='./GamePage/gamepage.html'">Games</button>
-                <button class="headerbuttons" onclick="window.location.href='./PlaytestPage/playtest.html'">Playtest</button>
-                <button class="headerbuttons" onclick="window.location.href='./ChangelogPage/changelogpage.html'">Changelog</button>
-                <button class="headerbuttons" onclick="window.location.href='./AboutPage/aboutpage.html'">About Us</button>
+                <button class="headerbuttons" onclick="window.location.href='../PlaytestPage/playtest.html'">Playtest</button>
+                <button class="headerbuttons" onclick="window.location.href='../ChangelogPage/changelogpage.html'">Changelog</button>
+                <button class="headerbuttons" onclick="window.location.href='../AboutPage/aboutpage.html'">About Us</button>
             </div>
         </div>
         <div class="main">
-            <div id="gamesection">
-                <img id="gamecover" src="preview.png">
-                <div id="overlay1">
-                    <img id="gamelogo" src="./Assets/gamelogo.png">
-                    <p id="gamehook">Enter the Gungeon in a dark fantasy cooking setting</p>
-                    <button id="learnmore" onclick="window.location.href='./Gamepage/gamepage.html'">LEARN MORE</button>
+            <div id="gameinfo">
+                <img id="gamelogo" src="./Assets/gamelogo.png">
+                <h1>SLAY, SAUTE, SURVIVE</h1>
+                <h2 id="gamedescription">Explore the recipe ruins by defeating monsters using a dangerous combination of food weapons with unique effects</h2>
+            </div>
+            <div id="media">
+                <video id="trailer" controls>
+                    <source src="./Assets/RFR_Trailer_Draft2.mp4" type="video/mp4">
+                </video>
+                <div id="gameimagesdiv">
+                    <img class="gameimage" src="./Assets/previewImg0.png">
+                    <img class="gameimage" src="./Assets/previewImg1.png">
+                    <img class="gameimage" src="./Assets/previewImg2.png">
+                    <img class="gameimage" src="./Assets/previewImg3.png">
                 </div>
             </div>
-            <div id="studiosection">
-                <img id="studiobox" src="./Assets/cardboard_WideBig.png">
-                <div id="overlay2">
-                    <img id="biglogo" src="./Assets/tlgslogo.png">
-                    <div id="studiotext">
-                        <p id="studioname">Totally Legit Game Studio</p>
-                        <p id="studiohook">A hook for our game studio</p>
-                    </div>
+            <div class="highlight">
+                <div class="highlighttext">
+                    <h1>Slay</h1>
+                    <h2>Fight a variety of enemies ..more words here..</h2>
                 </div>
+                <img class="highlightimage" src="slayImg.png">
+            </div>
+            <div class="highlight">
+                <div class="highlighttext">
+                    <h1>Sautee</h1>
+                    <h2>Cook powerful items to aid your journey</h2>
+                </div>
+                <img class="highlightimage" src="./Assets/sauteeImg.png">
+            </div>
+            <div class="highlight">
+                <div class="highlighttext">
+                    <h1>Survive</h1>
+                    <h2>Dive deeper into the dungeon to .. more words here..</h2>
+                </div>
+                <img class="highlightimage" src="./Assets/surviveImg.png">
+            </div>
+            <div id="backtotop">
+                <p><a href="">Back to Top</a></p>
             </div>
         </div>
         <div class="footer"></div>
