@@ -6,6 +6,11 @@
     font-family: "Cardboard Cat";
     src: url("../Assets/cardboard_cat/CardboardCat-Bold.otf") format("opentype");
 }
+/* cafe francoise */
+@font-face {
+    font-family: "Cafe Francoise";
+    src: url("../Assets/cafe_francoise/Cafe_Francoise_D.otf") format("opentype");
+}
 
 
 html, body {
@@ -103,18 +108,20 @@ button:active {
 	width: 80vw;
 	z-index: 1;
 	text-align: center;
+	margin-top: 4%;
 }
 
 .message {
 	font-family: "Cardboard Cat", sans-serif;
 }
 
-#box1, #box2 {
+#box {
 	position: relative;
-	width: 80vw;
-	height: 20%;
+	width: 70vw;
+	height: 25vw;
 	z-index: 1;
-	margin: 3%;
+	margin-top: 6%;
+	margin-bottom: 1%;
 }
 
 #cardboardbox {
@@ -126,7 +133,7 @@ button:active {
 	padding: 0;
 }
 
-#overlay1, #overlay2 {
+#overlay {
 	position: absolute;
 	top: 0;
 	z-index: 3;
@@ -138,26 +145,29 @@ button:active {
 }
 
 .downloadbutton, .surveybutton {
-	width: 40vw;
-	height: 25vh;
+	width: 20vw;
+	height: 10vw;
+	padding: 2%;
 	background-color: #AB7A52;
 	color: #603913;
 	border: hidden;
 	font-family: "Cardboard Cat", serif;
-	font-size: 400%;
+	font-size: 3vw;
 	border-radius: 8px;
-	scale: 75%;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 #controls {
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 6%;
 }
 
 table {
 	margin-left: auto;
 	margin-right: auto;
-	width: 60vw;
+	width: 55vw;
 	text-align: center;
 	margin-top: 10%;
 }
@@ -173,15 +183,23 @@ th, td {
 }
 
 #recipeBook {
-	width: 95%;
-	justify-content: center;
+	width: 80vw;
+	margin-bottom: 5%;
 }
 
 #titlebox {
 	position: relative;
 	width: 100%;
 	z-index: 1;
-	text-align: center;
+	text-align: left;
+	margin-top: 4%;
+	margin-left: 4vw;
+}
+
+#changelog {
+	color: #754C29;
+	font-family: "Grandstander", serif;
+	font-size: 300%;
 }
 
 .textcontainer {
@@ -189,6 +207,18 @@ th, td {
 	width: 100%;
 	z-index: 1;
 	text-align: left;
+	margin-left: 4vw;
+	font-size: 100%;
+}
+
+.version {
+	color: #754C29;
+	font-family: "Grandstander", serif;
+	font-size: 200%;
+}
+
+.change {
+	margin-left: 2%;
 }
 
 a {
@@ -197,6 +227,15 @@ a {
 	font-size: 150%;
 	color: #754C29;
 	text-decoration: none;
+}
+
+#backtotop {
+	margin-top: 2%;
+}
+
+#backtotop p, a {
+	color: #ce282d;
+	font-family: "Cafe Francoise", serif;
 }
 
 .footer {

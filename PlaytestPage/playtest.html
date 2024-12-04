@@ -20,18 +20,15 @@
         </div>
         <div class="main">
             <div id="messagebox">
-                <h2 class="message">Your feedback is important to us</h2>
+                <h2 class="message">Your feedback is important to us.</h2>
                 <p class="message">Please download the game and fill out the form below</p>
                 <p class="message">NOTE! The playtest download may alert your antivirus software. This download is safe. Go into your antivirus software to allow the download.</p>
             </div>
-            <div id="box1">
+            <div id="box">
                 <img id="cardboardbox" src="../Assets/cardboard_WideBig.png">
-                <div id="overlay1">
-                    <a href="./RecipeForRuinBetaV0.2.2.zip" download>
-                    <button class="downloadbutton" id="windows">Download Game</button> </a>
-
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSffoZu3p2TTk0SHMiyD1CQ-m9PRZJ-oQ8WS61nPMA-fiPS4VQ/viewform?usp=sf_link">
-                        <button class="surveybutton">Feedback Survey</button> </a>
+                <div id="overlay">
+                    <button class="downloadbutton" id="windows" onclick="window.open('./RecipeForRuinBetaV0.2.2.zip')">Download Game</button>
+                    <button class="surveybutton" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSffoZu3p2TTk0SHMiyD1CQ-m9PRZJ-oQ8WS61nPMA-fiPS4VQ/viewform?usp=sf_link'">Feedback Survey</button>
                 </div>
             </div>
             <div id="controls">
@@ -60,9 +57,9 @@
             <div>
                 <img id="recipeBook" src="../Assets/RFR_RecipeBook.png">
             </div>
-
+            <hr width="100%" size="2" color="#754C29">
             <div id="titlebox">
-                <h1 id="title">Changelog</h2>
+                <h1 id="changelog">Changelog</h2>
             </div>
             <div class="textcontainer">
                 <h2 class="version">Beta Build v.0.2.1</h2>
