@@ -89,11 +89,13 @@ button:active {
 	border: hidden;
 	width: 8%;
 	height: 70%;
-	padding-top: 0.8%;
-	padding-bottom: 0.8%;
+	padding-top: 1%;
+	padding-bottom: 0.7%;
 	margin-left: .5%;
 	margin-right: .5%;
+	justify-content: botton;
 }
+
 
 .main {
 	flex: 0 0 100%;
