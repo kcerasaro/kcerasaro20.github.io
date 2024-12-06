@@ -172,6 +172,10 @@ a {
 	margin: 0;
 }
 
+.highlighttext h2 {
+	margin-right: 15%;
+}
+
 .highlightimage {
 	width: 40%;
 	margin-bottom: 5%;
