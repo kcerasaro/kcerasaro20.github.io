@@ -5,6 +5,11 @@
     font-family: "Cardboard Cat";
     src: url("../Assets/cardboard_cat/CardboardCat-Bold.otf") format("opentype");
 }
+/* cafe francoise */
+@font-face {
+    font-family: "Cafe Francoise";
+    src: url("../Assets/cafe_francoise/Cafe_Francoise_D.otf") format("opentype");
+}
 
 html, body {
 	margin: 0;
@@ -197,6 +202,16 @@ button:active {
 	font-size: 1vw;
 	margin-left: 2%;
 	margin-right: 2%;
+}
+
+#backtotop {
+	margin-top: 2%;
+}
+
+#backtotop p, a {
+	color: #ce282d;
+	font-family: "Cafe Francoise", serif;
+	text-decoration: none;
 }
 
 .footer {

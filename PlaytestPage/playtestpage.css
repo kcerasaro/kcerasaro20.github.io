@@ -12,6 +12,10 @@
     src: url("../Assets/cafe_francoise/Cafe_Francoise_D.otf") format("opentype");
 }
 
+#backtotop p, a {
+	color: #ce282d;
+	font-family: "Cafe Francoise", serif;
+}
 
 html, body {
 	margin: 0;
