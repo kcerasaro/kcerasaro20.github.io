@@ -1,0 +1,235 @@
+/* grandstander, for header */
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* cardboard cat*/
+@font-face {
+    font-family: "Cardboard Cat";
+    src: url("../Assets/cardboard_cat/CardboardCat-Bold.otf") format("opentype");
+}
+/* cafe francoise */
+@font-face {
+    font-family: "Cafe Francoise";
+    src: url("../Assets/cafe_francoise/Cafe_Francoise_D.otf") format("opentype");
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 320%;
+    color: #754C29;
+}
+
+p {
+    font-family: "Grandstander", serif;
+    font-size: 100%;
+    color: black;
+}
+
+button:active {
+    transform: translateY(4px);
+}
+
+.header {
+    flex: 0 0 10%;
+    background-color: #754C29;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#smalllogodiv {
+    width: 4%;
+    display: flex;
+    justify-content: right;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#smalllogo {
+/*    width: 80%;*/
+    display: none;
+}
+
+#headerbuttonsdiv {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerbuttons {
+    display: none;
+}
+
+.main {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../Assets/cardboard.png");
+    background-size: cover;
+    background-repeat: repeat-y;
+    padding: 5%;
+    padding-top: 0;
+    z-index: 0;
+    align-items: center;
+}
+
+#messagebox {
+    position: relative;
+    width: 80vw;
+    z-index: 1;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.message {
+    font-family: "Cardboard Cat", sans-serif;
+}
+
+#box1, #box2 {
+    position: relative;
+    width: 70vw;
+    height: 20%;
+    z-index: 1;
+    margin-top: 6%;
+    margin-bottom: 1%;
+}
+
+#cardboardbox1, #cardboardbox2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+
+#overlay1, #overlay2 {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.downloadbutton, .surveybutton {
+    width: 60%;
+    height: 30%;
+    padding: 2%;
+    background-color: #AB7A52;
+    color: #603913;
+    border: hidden;
+    font-family: "Cardboard Cat", serif;
+    font-size: 3vw;
+    border-radius: 8px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#survey1 {
+    display: none;
+}
+
+#windows2 {
+    display: none;
+}
+
+#controls {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6%;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 55vw;
+    text-align: center;
+    margin-top: 10%;
+}
+
+table, th, td {
+    border: 3px solid #603913;
+    border-collapse: collapse;
+    font-family: "Cardboard Cat", sans-serif;
+}
+
+th, td {
+    padding: 1%;
+}
+
+#recipeBook {
+    width: 80vw;
+    margin-bottom: 5%;
+}
+
+#titlebox {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    text-align: left;
+    margin-top: 4%;
+    margin-left: 4vw;
+}
+
+#changelog {
+    color: #754C29;
+    font-family: "Grandstander", serif;
+    font-size: 300%;
+}
+
+.textcontainer {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    text-align: left;
+    margin-left: 4vw;
+    font-size: 100%;
+}
+
+.version {
+    color: #754C29;
+    font-family: "Grandstander", serif;
+    font-size: 200%;
+}
+
+.change {
+    margin-left: 2%;
+}
+
+a {
+    margin-top: 10%;
+    font-family: "Cardboard Cat", sans-serif;
+    font-size: 150%;
+    color: #754C29;
+    text-decoration: none;
+}
+
+#backtotop {
+    margin-top: 2%;
+}
+
+#backtotop p, a {
+    color: #ce282d;
+    font-family: "Cafe Francoise", serif;
+}
+
+.footer {
+    flex: 0 0 5%;
+    background-image: url("../Assets/cardboardbottom.png");
+}
