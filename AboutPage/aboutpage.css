@@ -47,33 +47,39 @@ button:active {
 	align-items: center;
 }
 
-#smalllogodiv {
-	width: 4%;
+#navbar {
 	display: flex;
-	justify-content: right;
-	margin-left: 1%;
-	margin-right: 1%;
+	flex-direction: row;
+	height: 100%;
+	width: 100%;
+}
+
+#smalllogodiv {
+	width: 80px;
+	display: inline-block;
+	text-align: center;
+	align-content: center;
 }
 
 #smalllogo {
-	width: 80%;
+	height: 50px;
 }
 
 #headerbuttonsdiv {
 	width: 95%;
-	display: flex;
+	display: inline-block;
 	justify-content: left;
-	align-items: center;
+	align-content: center;
 }
 
 .headerbuttons {
 	font-family: "Grandstander", serif;
-	font-size: 1.5vw;
+	font-size: 22px;
 	color: white;
 	background-color: #AB7A52;
 	border-radius: 8px;
 	border: hidden;
-	width: 8%;
+	width: 120px;
 	height: 70%;
 	padding-top: 1%;
 	padding-bottom: 0.7%;
