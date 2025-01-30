@@ -67,7 +67,7 @@ button:active {
 }
 
 #smalllogodiv {
-	width: 80px;
+	width: 75px;
 	display: inline-block;
 	text-align: center;
 	align-content: center;
@@ -78,7 +78,6 @@ button:active {
 }
 
 #headerbuttonsdiv {
-	width: 95%;
 	display: inline-block;
 	justify-content: left;
 	align-content: center;
@@ -95,8 +94,8 @@ button:active {
 	height: 70%;
 	padding-top: 1%;
 	padding-bottom: 0.7%;
-	margin-left: .5%;
-	margin-right: .5%;
+	margin-left: 7px;
+	margin-right: 7px;
 	justify-content: botton;
 }
 
