@@ -7,10 +7,13 @@
         <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
     </head>
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 751px)"href="aboutpage.css">
-    <link rel="stylesheet" type="text/css" media="screen and (max-width: 750px)" href="playtest_mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 750px)" href="about_mobile.css">
     <body>
-        <div class="header">
+        <div id= "header" class="header">
             <div id="navbar">
+                <div id="menuButtonDiv">
+                    <button id="menuButton" onclick="showMenu()">≡</button>
+                </div>
                 <div id="smalllogodiv">
                     <img id="smalllogo" src="../Assets/tlgslogo.png">
                 </div>
@@ -21,7 +24,12 @@
                 </div>
             </div>
         </div>
-        <div class="main">
+        <div id="menu">
+            <button class="menubuttons" onclick="window.location.href='../index.html'">Home</button>
+            <button class="menubuttons" onclick="window.location.href='../PlaytestPage/playtest.html'">Playtest</button>
+            <button class="menubuttons" onclick="window.location.href=''">About</button>
+        </div>
+        <div id="main" class="main">
             <div id="top">
                 <img id="logobox" src="../Assets/cardboard_WideBig.png">
                 <div id="overlay">
@@ -132,5 +140,6 @@
                 teamsection.append(teamcard);
             }
         </script>
+        <script src="../mobileMenu.js"></script>
     </body>
 </html>
