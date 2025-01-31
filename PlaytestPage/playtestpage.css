@@ -66,6 +66,10 @@ button:active {
 	width: 100%;
 }
 
+#menuDiv {
+	display: none;
+}
+
 #smalllogodiv {
 	width: 75px;
 	display: inline-block;
