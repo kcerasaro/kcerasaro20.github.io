@@ -4,12 +4,16 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width">
         <title>Totally Legit Game Studio</title>
-        <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="./Assets/favicon.ico">
     </head>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 751px)"href="index.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 750px)" href="index_mobile.css">
     <body>
-        <div class="header">
+        <div id="header" class="header">
             <div id="navbar">
+                <div id="menuButtonDiv">
+                    <button id="menuButton" onclick="showMenu()">≡</button>
+                </div>
                 <div id="smalllogodiv">
                     <img id="smalllogo" src="./Assets/tlgslogo.png">
                 </div>
@@ -20,7 +24,12 @@
                 </div>
             </div>
         </div>
-        <div class="main">
+        <div id="menu">
+            <button class="menubuttons" onclick="window.location.href=''">Home</button>
+            <button class="menubuttons" onclick="window.location.href='./PlaytestPage/playtest.html'">Playtest</button>
+            <button class="menubuttons" onclick="window.location.href='./AboutPage/aboutpage.html'">About</button>
+        </div>
+        <div id="main" class="main">
             <div id="gameinfo">
                 <img id="gamelogo" src="./Assets/gamelogo.png">
                 <h1>SLAY, SAUTE, SURVIVE</h1>
@@ -66,5 +75,6 @@
         <script>
             let button = document.getElementById("button");
         </script>
+        <script src="./mobileMenu.js"></script>
     </body>
 </html>
