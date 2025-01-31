@@ -9,10 +9,10 @@
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 751px)"href="playtestpage.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 750px)" href="playtest_mobile.css">
     <body>
-        <div class="header">
+        <div id= "header" class="header">
             <div id="navbar">
-                <div id="menuDiv">
-                    <button id="menuButton" onclick="alert('hi')">≡</button>
+                <div id="menuButtonDiv">
+                    <button id="menuButton" onclick="showMenu()">≡</button>
                 </div>
                 <div id="smalllogodiv">
                     <img id="smalllogo" src="../Assets/tlgslogo.png">
@@ -24,7 +24,12 @@
                 </div>
             </div>
         </div>
-        <div class="main">
+        <div id="menu">
+            <button class="menubuttons" onclick="window.location.href='../index.html'">Home</button>
+            <button class="menubuttons" onclick="window.location.href=''">Playtest</button>
+            <button class="menubuttons" onclick="window.location.href='../AboutPage/aboutpage.html'">About</button>
+        </div>
+        <div id="main" class="main">
             <div id="messagebox">
                 <h2 class="message">Your feedback is important to us.</h2>
                 <p class="message">Please download the game and fill out the form below</p>
@@ -118,5 +123,6 @@
             </div>
         </div>
         <div class="footer"></div>
+        <script src="../mobileMenu.js"></script>
     </body>
 </html>

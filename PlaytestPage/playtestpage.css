@@ -50,7 +50,7 @@ button:active {
 	transform: translateY(4px);
 }
 
-.header {
+#header {
 	flex: 0 0 10%;
 	background-color: #754C29;
 	background-size: cover;
@@ -66,7 +66,11 @@ button:active {
 	width: 100%;
 }
 
-#menuDiv {
+#menuButtonDiv {
+	display: none;
+}
+
+#menu {
 	display: none;
 }
 
@@ -100,10 +104,10 @@ button:active {
 	padding-bottom: 0.7%;
 	margin-left: 7px;
 	margin-right: 7px;
-	justify-content: botton;
+	justify-content: bottom;
 }
 
-.main {
+#main {
 	flex: 0 0 100%;
 	display: flex;
 	flex-direction: column;
