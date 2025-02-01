@@ -95,7 +95,7 @@ button:active {
 	justify-content: bottom;
 }
 
-.main {
+#main {
 	flex: 0 0 auto;
 	display: flex;
 	flex-direction: column;
@@ -135,6 +135,9 @@ button:active {
 	width: 80%;
 	flex-wrap: wrap;
 	color: #603913;
+	padding-top: 1%;
+	padding-bottom: 2%;
+	text-align: center;
 }
 
 #teamsection {
@@ -165,7 +168,7 @@ button:active {
 	position: absolute;
 	top: 0;
 	width: 78%;
-	height: 18vw;
+	height: 240px;
 	z-index: 3;
 	align-items: center;
 	display: flex;
@@ -179,24 +182,24 @@ button:active {
 }
 
 .avatar {
-	width: 40%;
+	width: 90px;
 	margin-bottom: 2%;
 }
 
 .name {
 	font-family: "Cardboard Cat", serif;
 	margin: 0;
-	font-size: 1.5vw;
+	font-size: 24px;
 }
 
 .title {
 	font-family: "Cardboard Cat", serif;
 	margin: 0;
-	font-size: 1.2vw;
+	font-size: 16px;
 }
 
 .blurb {
-	font-size: 1vw;
+	font-size: 12px;
 	margin-left: 2%;
 	margin-right: 2%;
 }
@@ -210,6 +213,7 @@ button:active {
 	color: #ce282d;
 	font-family: "Cafe Francoise", serif;
 	text-decoration: none;
+	font-size: 25px;
 }
 
 .footer {

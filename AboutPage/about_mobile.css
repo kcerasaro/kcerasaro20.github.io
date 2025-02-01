@@ -26,7 +26,7 @@ body {
 
 p {
 	font-family: "Grandstander", serif;
-	font-size: 1.8vw;
+	font-size: 3vw;
 }
 
 button:hover {
@@ -121,7 +121,7 @@ button:active {
 }
 
 #main {
-	flex: 0 0 100%;
+	flex: 0 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -129,67 +129,51 @@ button:active {
 	background-size: cover;
 	background-repeat: repeat-y;
 	padding: 5%;
-	padding-top: 3%;
+	padding-bottom: 10%;
 	z-index: 0;
 }
 
 #top {
-	position: relative;
-	width: 100%;
-	height: 500px;
-	z-index: 1;
-	text-align: center;
 	display: flex;
 	flex-direction: column;
+	flex: 0 0 auto;
+	width: 100%;
 	align-items: center;
-	margin-top: 5%;
-	margin-bottom: 3%;
-/*	background-color: green;*/
 }
 
-#logobox {
-	position: relative;
-	width: 90%;
-	align-content: center;
-	z-index: 2;
-}
-
-#overlay {
-	position: absolute;
-	top: 0;
-	z-index: 3;
+#logowrapper {
+	flex: 0 0 70%;
+	width: 100%;
+	text-align: center;
 	justify-content: center;
-	align-content: center;
-	width: 90%;
-	height: 65%;
-	background-color: blue;
-	opacity: 0.5;
 }
 
-#logo_noOverlay {
-	margin-top: 1%;
-	width: 60%;
-	margin-bottom: 0;
-	z-index: 5;
+#logo {
+	display: block;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #description {
-	width: 80vw;
-	margin-top: 1%;
-	padding-top: 0;
+	flex: 0 0 30%;
+	width: 90%;
+	flex-wrap: wrap;
 	color: #603913;
-	z-index: 1;
+	padding-top: 1%;
+	padding-bottom: 2%;
+	text-align: center;
 }
 
 #teamsection {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	flex: 0 0 73%;
 	width: 100%;
-	height: 100%;
-	position: relative;
 	z-index: 1;
 	justify-content: center;
+	margin-top: 8%;
 }
 
 .teamcard {
@@ -197,7 +181,7 @@ button:active {
 	align-content: center;
 	text-align: center;
 	position: relative;
-	width: 24%;
+	width: 200px;
 	z-index: 2;
 	margin: .5%;
 }
@@ -210,50 +194,52 @@ button:active {
 	position: absolute;
 	top: 0;
 	width: 78%;
-	height: 18vw;
+	height: 165px;
 	z-index: 3;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	margin-left: 3.5%;
-	margin-top: 3vh;
+	margin-top: 5%;
 	padding: 5%;
 	padding-top: 10%;
 	overflow: hidden;
 }
 
 .avatar {
-	width: 40%;
+	width: 50px;
 	margin-bottom: 2%;
 }
 
 .name {
 	font-family: "Cardboard Cat", serif;
 	margin: 0;
-	font-size: 1.5vw;
+	font-size: 20px;
 }
 
 .title {
 	font-family: "Cardboard Cat", serif;
 	margin: 0;
-	font-size: 1.2vw;
+	font-size: 12px;
 }
 
 .blurb {
-	font-size: 1vw;
+	font-size: 10px;
 	margin-left: 2%;
 	margin-right: 2%;
 }
 
 #backtotop {
-	margin-top: 2%;
+	flex: 0 0 auto;
+	padding-top: 5%;
 }
 
 #backtotop p, a {
 	color: #ce282d;
 	font-family: "Cafe Francoise", serif;
 	text-decoration: none;
+	font-size: 25px;
 }
 
 .footer {
