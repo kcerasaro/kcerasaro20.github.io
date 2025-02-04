@@ -181,9 +181,9 @@ button:active {
 	align-content: center;
 	text-align: center;
 	position: relative;
-	width: 200px;
+	width: 180px;
 	z-index: 2;
-	margin: .5%;
+	margin: 0%;
 }
 
 .card {
@@ -201,7 +201,7 @@ button:active {
 	flex-direction: column;
 	flex-wrap: wrap;
 	margin-left: 3.5%;
-	margin-top: 5%;
+	margin-top: 4%;
 	padding: 5%;
 	padding-top: 10%;
 	overflow: hidden;
@@ -215,7 +215,7 @@ button:active {
 .name {
 	font-family: "Cardboard Cat", serif;
 	margin: 0;
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .title {
@@ -225,7 +225,7 @@ button:active {
 }
 
 .blurb {
-	font-size: 10px;
+	font-size: 8px;
 	margin-left: 2%;
 	margin-right: 2%;
 }
