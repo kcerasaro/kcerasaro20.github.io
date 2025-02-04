@@ -155,6 +155,10 @@ a {
 	align-items: center;
 }
 
+#mobileMedia {
+	display: none;
+}
+
 #trailer {
 	width: 95%;
 	margin-bottom: 2%;

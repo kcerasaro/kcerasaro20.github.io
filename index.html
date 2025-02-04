@@ -32,7 +32,7 @@
         <div id="main" class="main">
             <div id="gameinfo">
                 <img id="gamelogo" src="./Assets/gamelogo.png">
-                <h1>SLAY, SAUTE, SURVIVE</h1>
+                <h1 id="slogan">SLAY, SAUTE, SURVIVE</h1>
                 <h2 id="gamedescription">Explore the recipe ruins by defeating monsters using a dangerous combination of food weapons with unique effects</h2>
             </div>
             <div id="media">
@@ -46,6 +46,31 @@
                     <img class="gameimage" src="./Assets/previewImg3.png">
                 </div>
             </div>
+
+            <!-- slideshow code sourced from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+            <div id="mobileMedia">
+                <div class="slides">
+                    <video controls style="width:100%">
+                        <source src="./Assets/RFR_Trailer_MVP.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="slides fade">
+                    <img src="./Assets/previewImg0.png" style="width:100%">
+                </div>
+                <div class="slides fade">
+                    <img src="./Assets/previewImg1.png" style="width:100%">
+                </div>
+                <div class="slides fade">
+                    <img src="./Assets/previewImg2.png" style="width:100%">
+                </div>
+                <div class="slides fade">
+                    <img src="./Assets/previewImg3.png" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br/>
+            <!-- end slideshow code -->
             <div class="highlight">
                 <div class="highlighttext">
                     <h1>SLAY</h1>
@@ -73,7 +98,27 @@
         </div>
         <div class="footer"></div>
         <script>
-            let button = document.getElementById("button");
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("slides");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex-1].style.display = "block";
+            }
         </script>
         <script src="./mobileMenu.js"></script>
     </body>

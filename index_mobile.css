@@ -6,6 +6,8 @@
     src: url("./Assets/cafe_francoise/Cafe_Francoise_D.otf") format("opentype");
 }
 
+* {box-sizing: border-box;}
+
 html, body {
 	margin: 0;
 	width: 100%;
@@ -166,19 +168,22 @@ a {
 	width: 80%;
 	margin: auto;
 	margin-bottom: 5%;
+	font-size: 12px;
+
 }
 
 #gamelogo {
-	width: 50vw;
+	width: 100%;
 	margin: 0;
+	margin-top: 3%;
 }
 
-#media {
-	width: 72vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+#slogan {
+	font-size: 28px;
+}
+
+#media > * {
+	display: none;
 }
 
 #trailer {
@@ -187,12 +192,55 @@ a {
 	align-items: center;
 }
 
-#gameimagesdiv {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-bottom: 12%;
-	width: 95%;
+#gameimagesdiv > * {
+	display: none;
+}
+
+#mobileMedia > * {
+	width: 90%;
+	position: relative;
+	margin: auto;
+}
+
+.slides {
+	display: none;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	width: auto;
+	margin-top: -22px;
+	margin-bottom: 50px;
+	padding-top: 0px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 3px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6 ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	left: 5%;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.prev {
+	border-radius: 3px 0 0 3px;
+}
+
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {opacity: 0.4};
+	to {opacity: 1};
 }
 
 .gameimage {
