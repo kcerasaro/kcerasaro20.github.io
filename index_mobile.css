@@ -248,22 +248,24 @@ a {
 }
 
 .highlight {
+	margin-top: 20px;
 	display: flex;
-	flex-direction: row;
-	width: 72vw;
+	flex-direction: column;
+	width: 90%;
 	justify-content: space-between;
 }
 
 .highlighttext h1 {
 	margin: 0;
+	font-size: 26px;
 }
 
 .highlighttext h2 {
-	margin-right: 15%;
+	font-size: 12px;
 }
 
 .highlightimage {
-	width: 40%;
+	width: 100%;
 	margin-bottom: 5%;
 }
 
