@@ -111,7 +111,7 @@ button:active {
 	flex: 0 0 100%;
 	display: flex;
 	flex-direction: column;
-	background-image: url("../Assets/cardboard.png");
+	background-image: url("../Assets/cardboard.webp");
 	background-size: cover;
 	background-repeat: repeat-y;
 	padding: 5%;
