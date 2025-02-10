@@ -222,6 +222,10 @@ a {
 	position: relative;
 	margin: auto;
   }
+
+  .slides {
+	display: none;
+  }
   
   .media {
 	display: none;
