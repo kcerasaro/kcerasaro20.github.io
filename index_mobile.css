@@ -208,7 +208,7 @@ a {
 
 .prev, .next {
 	cursor: pointer;
-	position: absolute;
+	position: static;
 	width: auto;
 	margin-top: -22px;
 	margin-bottom: 50px;
