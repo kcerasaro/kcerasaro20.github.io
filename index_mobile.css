@@ -182,21 +182,11 @@ a {
 	font-size: 28px;
 }
 
-#media > * {
-	display: none;
-}
-
-#trailer {
-	width: 95%;
-	margin-bottom: 2%;
-	align-items: center;
-}
-
 #gameimagesdiv > * {
 	display: none;
 }
 
-#mobileMedia > * {
+#slideshow-container > * {
 	width: 90%;
 	position: relative;
 	margin: auto;
@@ -261,10 +251,6 @@ a {
 @keyframes fade {
 	from {opacity: 0.4};
 	to {opacity: 1};
-}
-
-.gameimage {
-	width: 23%;
 }
 
 .highlight {
