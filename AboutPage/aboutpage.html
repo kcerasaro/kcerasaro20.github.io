@@ -129,11 +129,20 @@
                 title.setAttribute("class", "title");
                 title.textContent = memberTitle;
                 cardoverlay.append(title);
+                
+                if(memberName == "Akoreyu") {
+                    let blurb = document.createElement("a");
+                    blurb.setAttribute("class", "blurb");
+                    blurb.setAttribute("href", memberBlurb);
+                    blurb.textContent = "Click Me";
+                    cardoverlay.append(blurb);
+                } else {
+                    let blurb = document.createElement("p");
+                    blurb.setAttribute("class", "blurb");
+                    blurb.textContent = memberBlurb;
+                    cardoverlay.append(blurb);
 
-                let blurb = document.createElement("p");
-                blurb.setAttribute("class", "blurb");
-                blurb.textContent = memberBlurb;
-                cardoverlay.append(blurb);
+                }
 
                 teamcard.append(cardoverlay);
                 teamsection.append(teamcard);
