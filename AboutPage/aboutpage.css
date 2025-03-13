@@ -207,6 +207,8 @@ button:active {
 
 a {
 	margin-top:10px;
+	font-family: "Cardboard Cat", serif;
+	font-size: 12px;
 	color:black;
 }
 
