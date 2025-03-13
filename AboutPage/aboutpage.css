@@ -29,6 +29,12 @@ p {
 	font-size: 1.8vw;
 }
 
+a {
+	/* font-family: "Grandstander", serif; */
+	font-size: 1.8vw;
+	margin-top: 10px;
+}
+
 button:hover {
 	cursor: pointer;
 }
@@ -199,16 +205,10 @@ button:active {
 }
 
 .blurb {
+	font-family: "Grandstander", serif;
 	font-size: 12px;
 	margin-left: 2%;
 	margin-right: 2%;
-	color:black;
-}
-
-a {
-	margin-top:10px;
-	font-family: "Grandstander", serif;
-	font-size: 12px;
 	color:black;
 }
 
