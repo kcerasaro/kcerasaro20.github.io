@@ -60,19 +60,21 @@
                 "I'm a 20 year old artist from the US! I specialize in making 2d and 3d art and look forward to a career in the gaming and design industry.",
                 "I wrestle with Jira so YOU don't have to!",
                 "I program games"];
+            const leadLinks = [null, null, null, 'https://celestedcallahan.wixsite.com/celeste-callahan', null];
 
             for (let i = 0; i < leadNames.length; i++) {
-                addTeamCards(teamsection, leadNames[i], leadTitles[i], leadBlurbs[i]);
+                addTeamCards(teamsection, leadNames[i], leadTitles[i], leadBlurbs[i], leadLinks[i]);
             }
 
             // ----- production -----
 
-            addTeamCards(teamsection, "Kaitlyn", "Web Development", "Hello I love the web and also development and sometimes web development even.");
-            addTeamCards(teamsection, "Kimberlyn", "Web Development", "Loves problem solving in games, programming, and everywhere else");
+            addTeamCards(teamsection, "Kaitlyn", "Web Development", 'Hello I love the web and also development and sometimes web development even.', 'https://www.linkedin.com/in/kaitlynmark/');
+            addTeamCards(teamsection, "Kimberlyn", "Web Development", "Loves problem solving in games, programming, and everywhere else", null);
+        
 
             // ----- art -----
 
-            addTeamCards(teamsection, "Mosadi", "Technical Artist", "Really good at making stuff look cool.");
+            addTeamCards(teamsection, "Mosadi", "Technical Artist", "Really good at making stuff look cool.", 'https://duvspear.artstation.com/');
 
             // ----- design -----
 
@@ -81,8 +83,9 @@
             const designBlurbs = ["I hope to create interesting and engaging narratives for people to enjoy.",
                                   "Hi! I’m a fourth year CS major who loves to spoil her cats (and maybe a little too obsessed with Lost Ark). ",
                                   "Full-time Computer Science major with a minor in Animation & VFX. Part-time connoisseur of sweet treats."];
+            const designLinks = [null, null, null];
             for (let i = 0; i < designNames.length; i++) {
-                addTeamCards(teamsection, designNames[i], designTitles[i], designBlurbs[i]);
+                addTeamCards(teamsection, designNames[i], designTitles[i], designBlurbs[i], designLinks[i]);
             }
             
             // programming
@@ -96,12 +99,13 @@
                                        "I buy games I'll never get around to playing because I'm do busy planning my next project.",
                                        "Computer Science major with a concentration in Game Programming & Development. Grew up on Nintendo and have a love for fighting games.",
                                        "I'm a programmer / bugtracker. CCI."];
+            const programmingLinks = [null, null, 'https://minhalvakil.github.io/', null, 'https://www.linkedin.com/in/dante-barbosa-toney-832737168/', null, null];
             for (let i = 0; i < programmingNames.length; i++) {
-                addTeamCards(teamsection, programmingNames[i], programmingTitles[i], programmingBlurbs[i]);
+                addTeamCards(teamsection, programmingNames[i], programmingTitles[i], programmingBlurbs[i], programmingLinks[i]);
             }
 
 
-            function addTeamCards(div, memberName, memberTitle, memberBlurb) {
+            function addTeamCards(div, memberName, memberTitle, memberBlurb, memberLink) {
                 console.log(teamsection);
                 let teamcard = document.createElement("div");
                 teamcard.setAttribute("class", "teamcard");
@@ -120,10 +124,25 @@
                 avatar.setAttribute("src", memberImg);
                 cardoverlay.append(avatar);
 
+                let nameSpan = document.createElement('div');
+                nameSpan.setAttribute('class', 'nameSpan');
+
                 let name = document.createElement("h2");
                 name.setAttribute("class", "name");
                 name.textContent = memberName;
-                cardoverlay.append(name);
+
+                if (memberLink != null) {
+                    let link = document.createElement('a');
+                    link.setAttribute('class', 'link');
+                    link.setAttribute('href', memberLink);
+                    link.setAttribute('target', '_blank')
+                    link.textContent = ' 🔗';
+                    name.append(link);
+                }
+
+                nameSpan.append(name);
+
+                cardoverlay.append(nameSpan);
 
                 let title = document.createElement("h3");
                 title.setAttribute("class", "title");
@@ -141,7 +160,6 @@
                     blurb.setAttribute("class", "blurb");
                     blurb.textContent = memberBlurb;
                     cardoverlay.append(blurb);
-
                 }
 
                 teamcard.append(cardoverlay);

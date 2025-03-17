@@ -198,6 +198,10 @@ button:active {
 	font-size: 24px;
 }
 
+.link {
+	font-size: 18px;
+}
+
 .title {
 	font-family: "Cardboard Cat", serif;
 	margin: 0;
