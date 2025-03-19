@@ -234,6 +234,18 @@ th, td {
 	font-size: 200%;
 }
 
+.version:after {
+	content: '\25BC'; /* down arrow */
+	color: #754C29;
+  	font-weight: bold;
+  	float: left;
+	margin-left: 5px;
+}
+
+.active:after {
+	content: "\25B2"; /* down arrow */
+}
+
 .change {
 	margin-left: 2%;
 }

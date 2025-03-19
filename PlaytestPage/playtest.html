@@ -19,34 +19,33 @@
                 </div>
                 <div id="headerbuttonsdiv">
                     <button class="headerbuttons" onclick="window.location.href='../index.html'">Home</button>
-                    <button class="headerbuttons" onclick="window.location.href=''">Playtest</button>
+                    <button class="headerbuttons" onclick="window.location.href=''">Download</button>
                     <button class="headerbuttons" onclick="window.location.href='../AboutPage/aboutpage.html'">About</button>
                 </div>
             </div>
         </div>
         <div id="menu">
             <button class="menubuttons" onclick="window.location.href='../index.html'">Home</button>
-            <button class="menubuttons" onclick="window.location.href=''">Playtest</button>
+            <button class="menubuttons" onclick="window.location.href=''">Download</button>
             <button class="menubuttons" onclick="window.location.href='../AboutPage/aboutpage.html'">About</button>
         </div>
         <div id="main" class="main">
             <div id="messagebox">
-                <h2 class="message">Your feedback is important to us.</h2>
-                <p class="message">Please download the game and fill out the form below</p>
-                <p class="message">NOTE! The playtest download may alert your antivirus software. This download is safe. Go into your antivirus software to allow the download.</p>
+                <h2 class="message">Download the Game Here</h2>
+                <p class="message">NOTE! The download may alert your antivirus software. This download is safe. Go into your antivirus software to allow the download.</p>
             </div>
             <div id="box1">
                 <img id="cardboardbox1" src="../Assets/cardboard_WideBig.png">
                 <div id="overlay1">
-                    <button class="downloadbutton" id="windows1" onclick="window.open('./RecipeForRuin_Dessert.zip')">Download Game</button>
-                    <button class="surveybutton" id="survey1" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSctXw6ml0_FCP40qHuNY6Vzqe17zMWSUJGmwcU6uqs8bSv6BQ/viewform'">Feedback Survey</button>
+                    <button class="downloadbutton" id="windows1" onclick="window.open('./RecipeForRuin_Buttered.zip')">Download for Windows</button>
+                    <button class="surveybutton" id="survey1" onclick="window.open('./RFR_Mac.zip')">FDownload for Mac</button>
                 </div>
             </div>
             <div id="box2">
                 <img id="cardboardbox2" src="../Assets/cardboard_WideBig.png">
                 <div id="overlay2">
-                    <button class="downloadbutton" id="windows2" onclick="window.open('./RecipeForRuin_Dessert.zip')">Download Game</button>
-                    <button class="surveybutton" id="survey2" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSctXw6ml0_FCP40qHuNY6Vzqe17zMWSUJGmwcU6uqs8bSv6BQ/viewform'">Feedback Survey</button>
+                    <button class="downloadbutton" id="windows2" onclick="window.open('./RecipeForRuin_Buttered.zip')">Download for Windows</button>
+                    <button class="surveybutton" id="survey2" onclick="window.open('./RFR_Mac.zip')">Download for Mac</button>
                 </div>
             </div>
             <div id="controls">
@@ -63,10 +62,6 @@
                         <td>Attack or Cast item</td>
                     </tr>
                     <tr>
-                        <td>Mouse 2</td>
-                        <td>Roll</td>
-                    </tr>
-                    <tr>
                         <td>1 to 9 or Mouse wheel</td>
                         <td>Select item in task bar</td>
                     </tr>
@@ -78,6 +73,9 @@
                         <td>C</td>
                         <td>Open up Compendium</td>
                     </tr>
+                    <tr>
+                        <td>Esc</td>
+                        <td>Pause Menu</td>
                 </table>
             </div>
             <hr width="100%" size="2" color="#754C29">
@@ -176,17 +174,20 @@
         <div class="footer"></div>
         <script>
             var col = document.getElementsByClassName("version");
-            console.log(col.length)
             var i;
 
             for(i = 0; i < col.length; i++){
                 col[i].addEventListener("click", function(){
                     this.classList.toggle("active");
                     var content = this.nextElementSibling;
-                    if (content.style.display === "block") {
+                    // block = visible, none = invisible
+                    if (content.style.display == "block") {
                         content.style.display = "none";
+                        // down
+                        
                     } else {
                         content.style.display = "block";
+                        // up
                     }
                 });
             }
