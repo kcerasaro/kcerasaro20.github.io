@@ -148,7 +148,7 @@ button:active {
 }
 
 #gameArtWrapper {
-	flex: 0 0 10%;
+	flex: 0 0 0%;
 	width: 110%;
 	text-align: center;
 	justify-content: center;
