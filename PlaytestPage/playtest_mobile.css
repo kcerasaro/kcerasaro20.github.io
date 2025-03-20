@@ -147,6 +147,20 @@ button:active {
     font-family: "Cardboard Cat", sans-serif;
 }
 
+#gameArtWrapper {
+	flex: 0 0 10%;
+	width: 110%;
+	text-align: center;
+	justify-content: center;
+}
+
+#gameArt {
+	display: block;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #box1, #box2 {
     position: relative;
     width: 90%;
